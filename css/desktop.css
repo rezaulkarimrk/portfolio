@@ -1,0 +1,121 @@
+/* navbar design start here */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.nav-logo{
+    text-align: left;
+}
+.nav-heading{
+    text-align: right;
+}
+.navbar-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navbar-menu a{
+    padding: 5px 10px;
+    margin: 20px;
+    background-color: transparent;
+    font-size: 1rem;
+
+}
+header h1{
+    padding-top: 0;
+}
+.nav-logo img {
+    width: 70px;
+}
+/* navbar design end here */
+
+/* profile design start here */
+.top-weather-icon{
+    right: 100px;
+    width: 120px;
+    /* transition: width 2s, transform 3s; */
+}
+.profile .top-weather-icon:hover{
+    width: 140px;
+}
+
+.profile-desc p{
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.bottom-weather-icon{
+    bottom: 20px;
+    left: 140px;
+    width: 120px;
+    /* transition: width 2s, transform 3s; */
+}
+.profile .bottom-weather-icon:hover{
+    width: 140px;
+}
+.profile::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* profile design end here */
+
+/* about me design start here */
+.aboutme-image{
+    margin-top: 100px;
+}
+.aboutme-image img{
+    width: 350px;
+}
+.aboutme-desc p{
+    text-align: left ;
+}
+/* about me design end here */
+
+/* Professional experience start here */
+.professional-experience{
+    padding: 1% 5%;
+}
+.professional-experience .cart{
+    height: 900px;
+}
+/* Professional experience ends here */
+
+/* Achivment design start here */
+.achivment {
+    padding-right: 50px;
+}
+
+.contact button{
+    width: 150px;
+}
+.contact-links{
+    position: relative;
+}
+.media-buttons{
+    margin-top: 280px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Achivment design ends here */
+footer{
+    margin-top: 12px;
+}
+.footer-menu a{
+    display: inline;
+    margin: 10px;
+}
+/* footer design start */
+/* footer design ends */

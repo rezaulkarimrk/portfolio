@@ -1,0 +1,404 @@
+*{
+    box-sizing: border-box;
+    font-family: "fira sans", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* navbar desing start here */
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+a{
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+}
+p{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+.dotted-hr{
+    border: 6px dotted white;
+    border-bottom: none;
+    width: 70px;
+    margin: 20px auto;
+}
+
+/* for mobile */
+[class*="col-"]{
+    width: 100%;
+}
+header{
+    background-color: #41868C;
+    padding: 1% 7%;
+    text-align: center;
+}
+header h1{
+    color: white;
+    margin: 0;
+    padding-top: 10px;
+}
+.navbar-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.navbar-menu a{
+    background-color:#0E5F6C;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+    transition: 1s;
+}
+.navbar-menu a:hover{
+    background-color: gray;
+    
+}  
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* navbar desing end here */
+
+/* prfile design start here */
+.profile{
+    padding: 130px 10px;
+    position: relative;
+    text-align: center;
+}
+.profile img{
+    width: 100px;
+    transition: transform 2s, width 2s;
+}
+.profile img:hover{
+    transform: rotate(360deg);
+
+}
+.top-weather-icon{
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+.bottom-weather-icon{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+}
+.profile h1{
+    font-family: "satisfy", sans-serif;
+    font-size: 3rem;
+}
+.profile p{
+    color: gray;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 20px auto;
+}
+/* prfile design end here */
+
+/* about me design start here */
+.about-me{
+    background-color: #379EA7;
+    padding: 1% 7%;
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.aboutme-image img{
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+.about-me::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.about-me p{
+    text-align: center;
+}
+.about-me a{
+    font-size: 1.2rem;
+}
+.cv-button{
+    background-color: #042425;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: white;
+    margin: 10px;
+}
+
+
+/* about me design end here */
+
+/* Professional experience ends here */
+.professional-experience{
+    padding: 1% 0%;
+}
+.professional-experience .cart{
+    background-color: #A49D9D;
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.3s;
+    height: 750px;
+}
+.professional-experience .cart:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+
+.cart-icon{
+    text-align: center;
+}
+.cart-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+
+.rounded-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.cart-title h2{
+    background-color: #616161;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.cart-desc p{
+    margin: 5px;
+    font-weight: 300;
+}
+.skills-container{
+    padding-right: 45px;
+
+}
+.cart-desc li{
+    list-style: none;
+    font-weight: bold;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: capitalize;
+}
+.skills-container li::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: calc(100% + 5px);
+    width: 100%;
+    height: 12px;
+    background-color: #322D4A;
+    opacity: 0.5;
+    border-radius: 100px;
+}
+.skills-container li::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: calc(100% + 5px);
+
+    width: 0;
+    height: 12px;
+    background-color: #322D4A;
+    border-radius: 100px;
+
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* animation-iteration-count: 5; */
+}
+.cart-desc li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+.cart-desc li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.cart-desc li.bs::after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 40%;
+    }
+}
+.cart-desc li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 95%;
+    }
+}
+.cart-desc li.nj::after{
+    animation-name: nj;
+}
+@keyframes nj{
+    to{
+        width: 65%;
+    }
+}
+.cart-desc li.php::after{
+    animation-name: php;
+}
+@keyframes php{
+    to{
+        width: 50%;
+    }
+}
+.cart-desc li.cplus::after{
+    animation-name: cplus;
+}
+@keyframes cplus{
+    to{
+        width: 75%;
+    }
+}
+.cart-desc li.rj::after{
+    animation-name: rj;
+}
+@keyframes rj{
+    to{
+        width: 60%;
+    }
+}
+.cart-desc li.pl::after{
+    animation-name: pl;
+}
+@keyframes pl{
+    to{
+        width: 30%;
+    }
+}
+.cart-desc li.sql::after{
+    animation-name: sql;
+}
+@keyframes sql{
+    to{
+        width: 30%;
+    }
+}
+.professional-experience::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+/* Professional experience ends here */
+
+/* Achivment design start here */
+.achivment-contact{
+    padding: 1% 7%;
+    background-color: #3CA1A9;
+    color: white;
+}
+.contact{
+    text-align: center;
+}
+.contact input, textarea{
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contact input{
+    padding: 10px;
+}
+.contact input:focus, textarea:focus{
+    text-align: left;
+}
+.contact button{
+    border: none;
+    border-radius: 12px;
+    background-color: #022426;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+
+.contact-links{
+    text-align: center;
+}
+
+
+.media-buttons .btn{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    transition: 1s;
+    width: 55px;
+}
+.media-buttons .btn:hover{
+    
+    background-color: gray;
+}
+
+.achivment-contact::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+/* Achivment design ends here */
+
+/* footer design start */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem
+}
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+.footer-menu a:hover{
+    color: gray;
+}
+footer::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* footer design end */
